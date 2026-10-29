@@ -1,0 +1,25 @@
+import type { Metadata } from "next";
+import { buildMetadata } from "@/lib/seo";
+import { services } from "@/lib/content/services";
+import { ServicePageTemplate } from "@/components/sections/ServicePageTemplate";
+
+const content = services["branding-creative"];
+
+export const metadata: Metadata = buildMetadata({
+  title: content.metaTitle,
+  description: content.metaDescription,
+  path: "/growth-engine/branding-creative",
+});
+
+export default function Page() {
+  return (
+    <ServicePageTemplate
+      content={content}
+      completeSchema
+      serviceName="Branding and Creative"
+      serviceType="Branding and Creative Services"
+      webPageTitle="Branding and Creative Services"
+      breadcrumbLabel="Branding and Creative"
+    />
+  );
+}

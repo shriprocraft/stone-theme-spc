@@ -1,0 +1,1 @@
+self.__SSG_MANIFEST=new Set(["\u002Ffeatured-projects\u002F[project-slug]"]);self.__SSG_MANIFEST_CB&&self.__SSG_MANIFEST_CB()
